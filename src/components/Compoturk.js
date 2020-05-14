@@ -5,7 +5,7 @@ import '../style/style.scss'
 import Layout from "../components/layout"
 import Img from 'gatsby-image'
 import posed from "react-pose";
-import Masonry from 'react-masonry-css'
+
 
 const Box = posed.div({
       hoverable: true,
@@ -38,13 +38,7 @@ const Box = posed.div({
 
 
 
-  const breakpointColumnsObj = {
-  default: 2,
-  1100: 3,
-  900: 2,
-  500: 1
   
-};
 
   const Compoturk= () => {
     const data = useStaticQuery(graphql`
@@ -108,11 +102,7 @@ const Box = posed.div({
     <SRLWrapper options={options}>
     
     <div className ="container" >
-     <Masonry
- breakpointCols={breakpointColumnsObj}
-  className="my-masonry-grid"
-  columnClassName="my-masonry-grid_column"
->
+
         <div className="img1 img" 
         data-sal-duration="1200"
         data-sal="slide-up"
@@ -195,7 +185,7 @@ const Box = posed.div({
     <Img fluid= {data.leaf3.childImageSharp.fluid}/>
     </Box>
     </div>
-</Masonry>
+
     </div>
 
 
