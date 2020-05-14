@@ -1,0 +1,12 @@
+.grid-parent{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+    @media (min-width: 56.25em){
+        grid-template-columns: 400px auto;
+    }
+}
+.main{
+padding: 1rem;
+}
